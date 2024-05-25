@@ -69,7 +69,7 @@
 
 @layer components {
   .container {
-    @apply w-full max-w-[1170px];
+    @apply w-full max-w-6xl;
   }
 
   .hint, .error {

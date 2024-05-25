@@ -5,15 +5,18 @@
     @apply flex gap-8;
 
     .quizContentWrapper {
-      @apply w-full h-[calc(100vh-300px)] overflow-y-auto;
+      height: calc(100vh - 300px);
+      @apply w-full overflow-y-auto;
 
       &.showedQuestionCreator {
-        @apply w-[calc(100%-400px)];
+        width: calc(100% - 400px);
       }
     }
 
     .quizCreatorWrapper {
-      @apply w-[400px] h-[calc(100vh-300px)] overflow-y-auto bg-slate-50 p-4;
+      width: 400px;
+      height: calc(100vh - 300px);
+      @apply overflow-y-auto bg-slate-50 p-4;
     }
   }
 

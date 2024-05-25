@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
       // Make custom screen sizes and query for desktop first design
@@ -30,9 +28,11 @@ module.exports = {
         customBlack: '#181A20',
         customAccentLight: '#FD4852',
         customAccent: '#F90E27',
+      },
+      boxShadow: {
+        'reversed': '0 -1px 2px 0px rgba(0, 0, 0, 0.05)',
       }
     },
   },
   plugins: [],
-}
-
+};
