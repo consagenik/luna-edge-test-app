@@ -1,0 +1,7 @@
+.text {
+  @apply text-black;
+
+  &.centered {
+    @apply text-center;
+  }
+}

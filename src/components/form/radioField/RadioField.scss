@@ -1,0 +1,9 @@
+.radioField {
+  label {
+    @apply flex items-center;
+
+    input {
+      @apply hidden;
+    }
+  }
+}

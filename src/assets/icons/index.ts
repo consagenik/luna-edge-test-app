@@ -1,0 +1,9 @@
+export {default as CheckboxIcon} from './Checkbox.svg';
+export {default as CompletedIcon} from './Completed.svg';
+export {default as EditIcon} from './Edit.svg';
+export {default as LinkIcon} from './Link.svg';
+export {default as RadioButtonIcon} from './RadioButton.svg';
+export {default as TextIcon} from './Text.svg';
+export {default as CreateIcon} from './Create.svg';
+export {default as RemoveIcon} from './Remove.svg';
+export {default as LogoIcon} from './Logo.svg'

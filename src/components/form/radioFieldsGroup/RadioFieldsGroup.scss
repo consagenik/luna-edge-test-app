@@ -1,0 +1,9 @@
+.radioFieldsGroup {
+  .label {
+    @apply mb-2.5;
+  }
+
+  .fieldsList {
+    @apply flex flex-col gap-2;
+  }
+}

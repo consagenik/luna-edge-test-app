@@ -1,0 +1,13 @@
+.inputWrapper {
+  .inputField {
+    @apply grid grid-cols-1 gap-1;
+
+    label {
+      @apply text-base text-black;
+    }
+
+    input {
+      @apply outline-none border border-gray-300 rounded-md px-4 py-3 text-base text-gray-600 w-full;
+    }
+  }
+}

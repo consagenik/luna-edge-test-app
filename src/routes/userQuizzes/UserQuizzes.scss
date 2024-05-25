@@ -1,0 +1,19 @@
+.allQuizzes {
+  @apply grid gap-8 pt-8 pb-8;
+
+  .toolPanel {
+    @apply flex items-center justify-between border-t border-b border-gray-300 p-4;
+
+    a {
+      @apply flex items-center gap-2;
+
+      p {
+        @apply text-gray-600 text-base;
+      }
+    }
+  }
+
+  .quizzes {
+    @apply flex flex-col gap-8;
+  }
+}

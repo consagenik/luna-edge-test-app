@@ -1,0 +1,7 @@
+.headerNavigationLink {
+  @apply text-black hover:text-customAccent;
+
+  &.active {
+    @apply text-customAccent;
+  }
+}

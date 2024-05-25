@@ -1,0 +1,7 @@
+header {
+  @apply flex items-center px-4 h-16 box-border bg-white sm:py-8 md:py-16 shadow-sm;
+
+  .container {
+    @apply flex justify-between items-center gap-4;
+  }
+}

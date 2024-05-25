@@ -1,0 +1,27 @@
+.quizItemHeader {
+  @apply flex items-center justify-between px-4 pb-2 mb-2.5 border-b border-gray-300;
+
+  .titleWrapper {
+    @apply flex items-center gap-2.5;
+
+    .link {
+      @apply flex items-center gap-2.5;
+    }
+  }
+
+  .score {
+    @apply text-gray-600 text-base;
+
+    .scoreValue {
+      @apply text-black font-bold;
+    }
+  }
+
+  .editLink {
+    @apply flex items-center gap-2;
+
+    p {
+      @apply text-gray-600 text-base hover:text-customAccent;
+    }
+  }
+}

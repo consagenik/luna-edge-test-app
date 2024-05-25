@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Neue Montreal Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url("./assets/fonts/NeueMontreal-Regular.otf") format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Neue Montreal Italic';
+    font-style: italic;
+    font-weight: 400;
+    src: url("./assets/fonts/NeueMontreal-Italic.otf") format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Neue Montreal Light';
+    font-style: normal;
+    font-weight: 300;
+    src: url("./assets/fonts/NeueMontreal-Light.otf") format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Neue Montreal Light Italic';
+    font-style: italic;
+    font-weight: 300;
+    src: url("./assets/fonts/NeueMontreal-LightItalic.otf") format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Neue Montreal Medium';
+    font-style: normal;
+    font-weight: 500;
+    src: url("./assets/fonts/NeueMontreal-Medium.otf") format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Neue Montreal Medium Italic';
+    font-style: italic;
+    font-weight: 500;
+    src: url("./assets/fonts/NeueMontreal-MediumItalic.otf") format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Neue Montreal Bold';
+    font-style: normal;
+    font-weight: bold;
+    src: url("./assets/fonts/NeueMontreal-Bold.otf") format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Neue Montreal Bold Italic';
+    font-style: italic;
+    font-weight: bold;
+    src: url("./assets/fonts/NeueMontreal-BoldItalic.otf") format('opentype');
+  }
+
+  body {
+    @apply font-neue-regular bg-white text-customBlack;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .container {
+    @apply w-full max-w-[1170px];
+  }
+
+  .hint, .error {
+    @apply ml-4 mt-1 text-xs;
+  }
+
+  .hint {
+    @apply text-gray-400;
+  }
+
+  .error {
+    @apply text-red-500;
+  }
+}

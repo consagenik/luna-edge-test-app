@@ -1,0 +1,9 @@
+.App {
+  @apply flex flex-col h-screen;
+
+  main {
+    &.container {
+      @apply flex-grow;
+    }
+  }
+}

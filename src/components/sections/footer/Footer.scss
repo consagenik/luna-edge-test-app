@@ -1,0 +1,7 @@
+footer {
+    @apply flex items-center h-24 px-4 box-border bg-white sm:py-8 md:py-16 shadow-[rgb(0,0,0,0.05)_0px_-1px_2px_0px];
+
+    .container {
+        @apply justify-between items-center gap-2;
+    }
+}

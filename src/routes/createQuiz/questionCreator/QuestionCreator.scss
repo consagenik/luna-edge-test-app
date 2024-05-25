@@ -1,0 +1,15 @@
+.questionCreator {
+    @apply grid gap-8 pt-8 pb-8;
+
+    .questionCreatorForm {
+        @apply grid gap-4;
+    }
+
+    .answers {
+        @apply grid gap-4;
+    }
+
+    .actionButtons {
+        @apply flex justify-end gap-4;
+    }
+}

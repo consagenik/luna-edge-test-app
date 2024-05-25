@@ -1,0 +1,15 @@
+.checkboxButton {
+  @apply flex items-center justify-center w-5 h-5 mr-3 rounded-sm border border-gray-300 box-border cursor-pointer transition-colors duration-100 ease-in-out;
+
+  .square {
+    @apply w-3 h-3 rounded-sm bg-transparent transition-colors duration-100 ease-in-out;
+  }
+
+  &.checked {
+    @apply border border-blue-500;
+
+    .square {
+      @apply bg-blue-500;
+    }
+  }
+}

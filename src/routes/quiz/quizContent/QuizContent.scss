@@ -1,0 +1,19 @@
+.quizContent {
+  @apply grid gap-8 pt-8 pb-8;
+
+  .questionsTitle {
+    @apply mb-4;
+  }
+
+  .questionTextWrapper {
+    @apply mb-4;
+  }
+
+  .createQuizForm {
+    @apply grid gap-4;
+  }
+
+  .actionButtons {
+    @apply flex justify-center gap-4;
+  }
+}

@@ -1,0 +1,27 @@
+button {
+  @apply hover:bg-gray-600 font-bold py-2 px-4 rounded;
+
+  &.primary {
+    @apply text-white bg-sky-500 hover:bg-blue-600;
+
+    &.disabled {
+      @apply text-gray-600 border border-gray-300 bg-gray-200;
+    }
+  }
+
+  &.secondary {
+    @apply bg-customAccentLight text-white hover:bg-gray-600 hover:bg-customAccent;
+
+    &.disabled {
+      @apply text-gray-600 border border-gray-300 bg-gray-200;
+    }
+  }
+
+  &.transparent {
+    @apply bg-white text-gray-600 border border-gray-300 hover:bg-slate-50;
+
+    &.disabled {
+      @apply text-gray-600 border border-gray-300 bg-gray-200;
+    }
+  }
+}

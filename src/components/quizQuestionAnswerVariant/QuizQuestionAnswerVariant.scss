@@ -1,0 +1,7 @@
+.quizQuestionAnswerVariant {
+  @apply grid grid-cols-1 gap-1 p-4 rounded-lg border border-gray-300 relative;
+
+  .removeAnswer {
+    @apply absolute top-2 right-2 p-0 text-customAccentLight cursor-pointer transition-colors duration-100 ease-in-out hover:text-customAccent hover:bg-transparent;
+  }
+}

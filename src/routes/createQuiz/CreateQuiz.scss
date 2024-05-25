@@ -1,0 +1,31 @@
+.createQuiz {
+  @apply grid gap-8 pt-8 pb-8;
+
+  .quizDashboard {
+    @apply flex gap-8;
+
+    .quizContentWrapper {
+      @apply w-full h-[calc(100vh-300px)] overflow-y-auto;
+
+      &.showedQuestionCreator {
+        @apply w-[calc(100%-400px)];
+      }
+    }
+
+    .quizCreatorWrapper {
+      @apply w-[400px] h-[calc(100vh-300px)] overflow-y-auto bg-slate-50 p-4;
+    }
+  }
+
+  .createQuizForm {
+    @apply grid gap-4;
+
+    .fieldsWrapper {
+      @apply grid grid-cols-1 gap-4 border-dashed border-b border-gray-300 pb-4;
+    }
+
+    .questionsList {
+      @apply grid grid-cols-1 gap-4 border-dashed border-b border-gray-300 pb-4;
+    }
+  }
+}
