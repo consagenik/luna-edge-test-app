@@ -10,7 +10,7 @@ import {EditingQuestion} from "../../entities";
 import {ApiQuizCreateRequest} from "../../api/entities";
 import {RoutePath} from "../routeConfig";
 
-import {Button, InputField, PassiveQuestionItem, SubmitButton, TextareaField, Title} from "../../components";
+import {Button, InputField, Loader, PassiveQuestionItem, SubmitButton, TextareaField, Title} from "../../components";
 import {QuestionCreator, QuestionCreatorFormType} from "./questionCreator";
 
 interface IForm {
@@ -59,6 +59,8 @@ export default function CreateQuiz() {
       }).finally(() => {
         setIsLoading(false);
       })
+    } else {
+      setIsLoading(false);
     }
   }, [id]);
 
@@ -170,6 +172,8 @@ export default function CreateQuiz() {
   return (
     <div className="createQuiz">
       <Title text="Create Quiz" />
+
+      {isLoading && <Loader />}
 
       <div className="quizDashboard">
         <div className={showQuestionCreator ? "quizContentWrapper showedQuestionCreator" : "quizContentWrapper"}>
